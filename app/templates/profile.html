@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black; /* Fundo preto */
+            color: pink; /* Texto rosa */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color:black; /* Fundo cinza escuro */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px black; /* Sombra mais forte */
+        }
+        h1 {
+            color: rgb(221, 94, 115); /* Título em rosa */
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type=file] {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid rgb(221, 94, 115); /* Borda rosa */
+            border-radius: 4px;
+            background-color:black; /* Fundo cinza escuro */
+            color: white; /* Texto branco */
+        }
+        button {
+            background-color: rgb(221, 94, 115); /* Fundo rosa */
+            color: white; /* Texto branco */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+        }
+        button:hover {
+            background-color: #ff69b4; /* Rosa mais claro ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil</h1>
+        <form method="POST" action="/predict" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">Classificar</button>
+        </form>
+    </div>
+</body>
+</html>

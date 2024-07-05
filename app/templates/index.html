@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IA</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Utiliza toda a altura da viewport */
+            margin: 0; /* Remove margens padrão */
+            font-family: Arial, sans-serif; /* Define uma fonte padrão */
+            text-align: center; /* Centraliza o texto */
+            font-size: 18px; /* Tamanho de fonte padrão */
+            line-height: 1.6; /* Espaçamento entre linhas */
+        }
+        .content {
+            max-width: 800px; /* Largura máxima do conteúdo */
+            margin: auto; /* Centraliza o conteúdo na horizontal */
+            padding: 20px; /* Espaçamento interno */
+        }
+        .title {
+            font-size: 45px; /* Tamanho maior para o título principal */
+            color: rgb(235, 121, 140); /* Cor rosa para o título principal */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+        .subtitle {
+            font-size: 25px; /* Tamanho maior para o subtítulo */
+            font-weight: bold; /* Negrito para o subtítulo */
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 18px; /* Tamanho maior para o texto descritivo */
+            text-align: justify; /* Justifica o texto */
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px; /* Maior padding para os botões */
+            border-radius: 30px;
+            background-color: rgb(236, 91, 115);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+            margin-right: 10px; /* Espaço entre os botões */
+            font-size: 16px; /* Tamanho maior para o texto dos botões */
+        }
+        .contact-button {
+            position: absolute;
+            top: 20px; /* Distância do topo */
+            right: 20px; /* Distância da direita */
+            padding: 12px 24px; /* Maior padding para o botão de contato */
+            font-size: 16px; /* Tamanho maior para o texto do botão de contato */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Projeto IA</div>
+        <div class="subtitle">Bem-vindo ao Sistema de Classificação de Imagens.</div>
+        <div class="description">
+            <p>O projeto tem como objetivo aplicar Transfer Learning para desenvolver um sistema de classificação de imagens de duas classes ("pessoas" e "jimin"), integrando esse modelo em um website desenvolvido com Flask que inclui funcionalidades de detecção em tempo real usando OpenCV.</p>
+        </div>
+        <a class="button" href="/profile">Perfil</a>
+        <a class="button" href="/realtime">Detecção em Tempo Real</a>
+    </div>
+    <a class="button contact-button" href="/contact">Contato</a>
+
+</body>
+</html>
+
